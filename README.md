@@ -1,3 +1,5 @@
+### WIP Multiverse/Hyperspace compatibility project
+
 ftl-profile-editor
 ==================
 
