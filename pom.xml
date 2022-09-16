@@ -157,6 +157,44 @@
 				</execution>
 			</executions>
 		</plugin>
+      <plugin>
+        <groupId>org.jvnet.jaxb2.maven2</groupId>
+        <artifactId>maven-jaxb2-plugin</artifactId>
+        <executions>
+          <execution>
+            <goals>
+              <goal>generate</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <schemaDirectory>src/main/resources</schemaDirectory>
+          <schemaIncludes>
+            <include>*.xsd</include>
+          </schemaIncludes>
+          <bindingIncludes>
+            <include>*.xjb</include>
+          </bindingIncludes>
+          <!-- By default, nothing is excluded. -->
+          <schemaExcludes>
+            <exclude>*.xs</exclude>
+          </schemaExcludes>
+          <extension>true</extension>
+          <args>
+            <arg>-Xsimplify</arg>
+            <arg>-XautoNameResolution</arg>
+          </args>
+          <plugins>
+            <plugin>
+              <groupId>org.jvnet.jaxb2_commons</groupId>
+              <artifactId>jaxb2-basics</artifactId>
+              <version>0.13.1</version>
+            </plugin>
+          </plugins>
+          <generateDirectory>src/main/java</generateDirectory>
+          <generatePackage>net.ceshion.ftl.xml.hyperspace</generatePackage>
+        </configuration>
+      </plugin>
 	</plugins>
   </build>
   
