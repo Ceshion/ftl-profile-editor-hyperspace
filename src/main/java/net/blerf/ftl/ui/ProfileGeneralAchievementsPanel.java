@@ -24,6 +24,7 @@ import net.blerf.ftl.ui.FTLFrame;
 import net.blerf.ftl.ui.IconCycleButton;
 import net.blerf.ftl.ui.ImageUtilities;
 import net.blerf.ftl.ui.StatusbarMouseListener;
+import net.blerf.ftl.ui.contract.IFTLFrame;
 import net.blerf.ftl.xml.Achievement;
 
 
@@ -38,14 +39,14 @@ public class ProfileGeneralAchievementsPanel extends JPanel {
 
 	private static final String NEWBIE_TIP_LEVEL = "Newbie Tip Level";
 
-	private FTLFrame frame;
+	private IFTLFrame frame;
 
 	private HashMap<Achievement, IconCycleButton> generalAchBoxes = new HashMap<Achievement, IconCycleButton>();
 
 	private FieldEditorPanel newbiePanel = null;
 
 
-	public ProfileGeneralAchievementsPanel( FTLFrame frame ) {
+	public ProfileGeneralAchievementsPanel( IFTLFrame frame ) {
 		this.setLayout( new BoxLayout( this, BoxLayout.Y_AXIS ) );
 		this.frame = frame;
 

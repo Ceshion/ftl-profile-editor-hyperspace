@@ -39,6 +39,7 @@ import net.blerf.ftl.parser.SavedGameParser.StoreShelf;
 import net.blerf.ftl.parser.SavedGameParser.SystemType;
 import net.blerf.ftl.ui.FTLFrame;
 import net.blerf.ftl.ui.StatusbarMouseListener;
+import net.blerf.ftl.ui.contract.IFTLFrame;
 
 
 public class StoreShelfPanel extends JPanel implements ActionListener {
@@ -60,7 +61,7 @@ public class StoreShelfPanel extends JPanel implements ActionListener {
 	private static final String[] AVAIL = new String[] { AVAIL_ZERO, AVAIL_ONE, AVAIL_TWO };
 	private static final String[] EXTRA = new String[] { EXTRA_ZERO, EXTRA_ONE, EXTRA_TWO };
 
-	private FTLFrame frame;
+	private IFTLFrame frame;
 
 	private StoreItemType[] itemTypes = StoreItemType.values();
 	private Map<StoreItemType, Map<String, ?>> itemLookups = new HashMap<StoreItemType, Map<String, ?>>();
@@ -71,7 +72,7 @@ public class StoreShelfPanel extends JPanel implements ActionListener {
 	private FTLConstants ftlConstants;
 
 
-	public StoreShelfPanel( FTLFrame frame, FTLConstants ftlConstants ) {
+	public StoreShelfPanel( IFTLFrame frame, FTLConstants ftlConstants ) {
 		super( new BorderLayout() );
 		this.frame = frame;
 

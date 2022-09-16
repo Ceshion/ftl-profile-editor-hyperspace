@@ -29,6 +29,7 @@ import net.blerf.ftl.core.EditorConfig;
 import net.blerf.ftl.parser.DataManager;
 import net.blerf.ftl.parser.DefaultDataManager;
 import net.blerf.ftl.ui.FTLFrame;
+import net.blerf.ftl.ui.contract.IFTLFrame;
 
 
 public class FTLProfileEditor {
@@ -275,7 +276,7 @@ public class FTLProfileEditor {
 				throw new ExitException();
 			}
 
-			FTLFrame frame = null;
+			IFTLFrame frame = null;
 			try {
 				frame = new FTLFrame( appConfig, APP_NAME, APP_VERSION );
 				frame.init();
