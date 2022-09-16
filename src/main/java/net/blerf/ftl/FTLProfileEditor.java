@@ -28,8 +28,10 @@ import net.vhati.modmanager.core.FTLUtilities;
 import net.blerf.ftl.core.EditorConfig;
 import net.blerf.ftl.parser.DataManager;
 import net.blerf.ftl.parser.DefaultDataManager;
+import net.blerf.ftl.parser.HyperspaceDataManager;
 import net.blerf.ftl.ui.FTLFrame;
 import net.blerf.ftl.ui.contract.IFTLFrame;
+import net.blerf.ftl.ui.hyperspace.HyperspaceFrame;
 
 
 public class FTLProfileEditor {
@@ -265,7 +267,7 @@ public class FTLProfileEditor {
 
 			// Parse the dats.
 			try {
-				DefaultDataManager dataManager = new DefaultDataManager( datsDir );
+				HyperspaceDataManager dataManager = new HyperspaceDataManager( datsDir );
 				DataManager.setInstance( dataManager );
 				dataManager.setDLCEnabledByDefault( true );
 			}
@@ -278,7 +280,7 @@ public class FTLProfileEditor {
 
 			IFTLFrame frame = null;
 			try {
-				frame = new FTLFrame( appConfig, APP_NAME, APP_VERSION );
+				frame = new HyperspaceFrame( appConfig, APP_NAME, APP_VERSION );
 				frame.init();
 				frame.setVisible( true );
 			}
