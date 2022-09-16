@@ -101,7 +101,8 @@
 			<artifactId>maven-assembly-plugin</artifactId>
 			<version>2.4.1</version>
 			<executions>
-				<execution>  <!-- Build jar. -->
+          <execution>
+            <!-- Build jar. -->
 					<id>jar-with-dependencies</id>
 					<phase>package</phase>
 					<goals>
@@ -124,7 +125,8 @@
 						<attach>false</attach>
 					</configuration>
 				</execution>
-				<execution>  <!-- Build zip archive. -->
+          <execution>
+            <!-- Build zip archive. -->
 					<id>dist-win</id>
 					<phase>package</phase>
 					<goals>
@@ -138,7 +140,8 @@
 						<appendAssemblyId>false</appendAssemblyId>
 					</configuration>
 				</execution>
-				<execution>  <!-- Build tar.gz archive. -->
+          <execution>
+            <!-- Build tar.gz archive. -->
 					<id>dist-unix</id>
 					<phase>package</phase>
 					<goals>
