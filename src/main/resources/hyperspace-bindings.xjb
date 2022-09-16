@@ -1,0 +1,22 @@
+<bindings version="2.1"
+    xmlns="http://java.sun.com/xml/ns/jaxb"
+    xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+    xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:com.fnf="http://www.fnf.com/xes">
+  <bindings schemaLocation="hyperspace.xsd" node="//xs:schema">
+  <globalBindings localScoping="toplevel" />
+		<bindings node="//xs:element[@name='augments']">
+			<bindings node="//xs:element[@name='aug']/xs:complexType/xs:choice">
+        <bindings node="./xs:element[@name='statBoosts']/xs:complexType/xs:sequence/xs:element[@name='statBoost']/xs:complexType">
+          <class name="statBoostData" />
+        </bindings>
+				<bindings node="./xs:element[@name='function']">
+					<bindings node="//xs:attribute[@name='value']">
+						<property name="functionName" />
+					</bindings>
+				</bindings>
+			</bindings>
+		</bindings>
+  </bindings>
+</bindings>

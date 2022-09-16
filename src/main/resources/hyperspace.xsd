@@ -1,0 +1,1576 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" xmlns:simplify="http://jaxb2-commons.dev.java.net/basic/simplify"
+		jaxb:extensionBindingPrefixes="simplify" jaxb:version="2.1">
+  <xs:element name="FTL">
+    <xs:annotation>
+      
+    </xs:annotation>
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:appinfo>
+              <simplify:as-element-property/>
+          </xs:appinfo>
+        </xs:annotation>
+        <xs:element type="xs:string" name="shiftotherelementsslightlytotheleftsotheyrealigned">
+          <xs:annotation>
+            
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="discord">
+          <xs:annotation>
+            
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="miniships">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="miniship" maxOccurs="unbounded" minOccurs="0">
+                      <xs:annotation>
+                        
+                      </xs:annotation>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:long" name="appId"/>
+              <xs:element type="xs:string" name="icon">
+                <xs:annotation>
+                  
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="enabled"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element type="xs:byte" name="version"/>
+        <xs:element name="advancedCrewTooltips">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="enabled"/>
+                <xs:attribute type="xs:string" name="ally"/>
+                <xs:attribute type="xs:string" name="enemy"/>
+                <xs:attribute type="xs:byte" name="rounding"/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="eventTooltips">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="enabled"/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="showNumericalWeaponCooldown">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="enabled"/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="redesignedWeaponTooltips">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="enabled"/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="infinite">
+          <xs:annotation>
+            
+          </xs:annotation>
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="enabled"/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="hullNumbers">
+          <xs:annotation>
+            
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="playerText">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:short" name="x"/>
+                      <xs:attribute type="xs:byte" name="y"/>
+                      <xs:attribute type="xs:byte" name="type"/>
+                      <xs:attribute type="xs:string" name="align"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="enemyText">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:short" name="x"/>
+                      <xs:attribute type="xs:byte" name="y"/>
+                      <xs:attribute type="xs:byte" name="type"/>
+                      <xs:attribute type="xs:string" name="align"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="bossText">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:short" name="x"/>
+                      <xs:attribute type="xs:byte" name="y"/>
+                      <xs:attribute type="xs:byte" name="type"/>
+                      <xs:attribute type="xs:string" name="align"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="enabled"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="hackingDroneFix">
+          <xs:annotation>
+            
+          </xs:annotation>
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="enabled"/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="titleScreen">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="splashImages">
+                <xs:annotation>
+                  
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="splashImage" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:short" name="x" use="optional"/>
+                            <xs:attribute type="xs:short" name="y" use="optional"/>
+                            <xs:attribute type="xs:string" name="center" use="optional"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute type="xs:short" name="logo_x"/>
+            <xs:attribute type="xs:byte" name="logo_y"/>
+            <xs:attribute type="xs:string" name="enabled"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="saveFile">
+          <xs:annotation>
+            
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="prefix"/>
+              <xs:element type="xs:byte" name="inheritMode"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="forceDlc">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="enabled"/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="seeds">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="enabled"/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="console">
+          <xs:annotation>
+            
+          </xs:annotation>
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="enabled"/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ships">
+          <xs:annotation>
+            
+          </xs:annotation>
+          <xs:complexType>
+            <xs:choice maxOccurs="unbounded" minOccurs="0">
+              <xs:annotation>
+                <xs:appinfo>
+                    <simplify:as-element-property/>
+                </xs:appinfo>
+              </xs:annotation>
+              <xs:element name="shipIcons">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="normalPos">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:short" name="x"/>
+                            <xs:attribute type="xs:short" name="y"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="bossPos">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:short" name="x"/>
+                            <xs:attribute type="xs:short" name="y"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="shipIcon" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="name"/>
+                          <xs:element type="xs:string" name="tooltip"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="shipOrder">
+                <xs:complexType>
+                  
+      <xs:annotation>
+        <xs:appinfo>
+          <simplify:property name="shipOrEmpty">
+            <simplify:as-element-property/>
+          </simplify:property>
+        </xs:appinfo>
+      </xs:annotation>
+                  <xs:choice maxOccurs="unbounded" minOccurs="0">
+                    <xs:element type="xs:string" name="ship" maxOccurs="unbounded" minOccurs="0">
+                      <xs:annotation>
+                        
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element type="xs:string" name="empty"/>
+                  </xs:choice>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="customShip">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:byte" name="hpCap">
+                      <xs:annotation>
+                        
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element type="xs:byte" name="startingScrap"/>
+                    <xs:element type="xs:byte" name="startingFuel"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="ship" maxOccurs="unbounded" minOccurs="0">
+                <xs:annotation>
+                  
+                </xs:annotation>
+                <xs:complexType mixed="true">
+                  <xs:sequence>
+                    <xs:element name="unlock" maxOccurs="unbounded" minOccurs="0">
+                      <xs:annotation>
+                        
+                      </xs:annotation>
+                      <xs:complexType>
+                        <xs:annotation>
+                          <xs:appinfo>
+                            <simplify:property name="typeOrOtherUnlocksOrShipReq">
+                              <simplify:as-element-property/>
+                            </simplify:property>
+                          </xs:appinfo>
+                        </xs:annotation>
+                        <xs:choice maxOccurs="unbounded" minOccurs="0">
+                          <xs:element type="xs:byte" name="type"/>
+                          <xs:element name="otherUnlocks">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="ship" maxOccurs="unbounded" minOccurs="0"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element type="xs:string" name="shipReq"/>
+                          <xs:element type="xs:byte" name="value"/>
+                        </xs:choice>
+                        <xs:attribute type="xs:string" name="variant" use="optional"/>
+                        <xs:attribute type="xs:string" name="silent" use="optional"/>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element type="xs:string" name="hiddenAug"/>
+                  </xs:sequence>
+                  <xs:attribute type="xs:string" name="name" use="optional"/>
+                  <xs:attribute type="xs:string" name="b" use="optional"/>
+                  <xs:attribute type="xs:string" name="c" use="optional"/>
+                  <xs:attribute type="xs:string" name="secret" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:choice>
+            <xs:attribute type="xs:string" name="hideFirstShipPage"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="crew">
+          <xs:annotation>
+            
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="race" maxOccurs="unbounded" minOccurs="0">
+                <xs:annotation>
+                  
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:annotation>
+                    <xs:appinfo>
+                      <simplify:property name="suffocationModifierOrFireDamageMultiplierOrAnimBase">
+                        <simplify:as-element-property/>
+                      </simplify:property>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  <xs:choice maxOccurs="unbounded" minOccurs="0">
+                    <xs:element type="xs:string" name="suffocationModifier">
+                      <xs:annotation>
+                        
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element type="xs:float" name="fireDamageMultiplier"/>
+                    <xs:element type="xs:string" name="animBase">
+                      <xs:annotation>
+                        
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="deathSounds">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="deathSound" maxOccurs="unbounded" minOccurs="0"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="skills">
+                      <xs:annotation>
+                        
+                      </xs:annotation>
+                      <xs:complexType>
+                        <xs:choice maxOccurs="unbounded" minOccurs="0">
+                          <xs:annotation>
+                            <xs:appinfo>
+                                <simplify:as-element-property/>
+                            </xs:appinfo>
+                          </xs:annotation>
+                          <xs:element name="piloting">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute type="xs:short" name="req" use="optional"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="engines">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute type="xs:short" name="req" use="optional"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="shields">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute type="xs:short" name="req" use="optional"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="weapons">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute type="xs:short" name="req" use="optional"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="repair">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute type="xs:short" name="req" use="optional"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="combat">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute type="xs:short" name="req" use="optional"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element type="xs:string" name="deathSound" maxOccurs="unbounded" minOccurs="0"/>
+                        </xs:choice>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element type="xs:float" name="damageMultiplier"/>
+                    <xs:element type="xs:float" name="passiveHealAmount"/>
+                    <xs:element type="xs:byte" name="passiveHealDelay"/>
+                    <xs:element name="powerEffect">
+                      <xs:complexType>
+                        <xs:annotation>
+                          <xs:appinfo>
+                            <simplify:property name="cooldownOrJumpCooldownOrPowerSounds">
+                              <simplify:as-element-property/>
+                            </simplify:property>
+                          </xs:appinfo>
+                        </xs:annotation>
+                        <xs:choice maxOccurs="unbounded" minOccurs="0">
+                          <xs:element type="xs:short" name="cooldown">
+                            <xs:annotation>
+                              
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element type="xs:string" name="jumpCooldown"/>
+                          <xs:element name="powerSounds">
+                            <xs:annotation>
+                              
+                            </xs:annotation>
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="powerSound" maxOccurs="unbounded" minOccurs="0"/>
+                                <xs:element type="xs:string" name="finishSound" maxOccurs="unbounded" minOccurs="0"/>
+                                <xs:element type="xs:string" name="sound" maxOccurs="unbounded" minOccurs="0"/>
+                                <xs:element type="xs:string" name="deathSound" maxOccurs="unbounded" minOccurs="0"/>
+                              </xs:sequence>
+                              <xs:attribute type="xs:string" name="enemy" use="optional"/>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element type="xs:string" name="friendlyFire">
+                            <xs:annotation>
+                              
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element type="xs:string" name="shipFriendlyFire"/>
+                          <xs:element name="buttonText">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute type="xs:string" name="id" use="optional"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="tooltip">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute type="xs:string" name="id" use="optional"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="cooldownColor">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute type="xs:short" name="r" use="optional"/>
+                                  <xs:attribute type="xs:short" name="g" use="optional"/>
+                                  <xs:attribute type="xs:short" name="b" use="optional"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element type="xs:string" name="effectAnim"/>
+                          <xs:element type="xs:short" name="crewHealth"/>
+                          <xs:element type="xs:short" name="selfHealth"/>
+                          <xs:element name="temporaryEffect">
+                            <xs:annotation>
+                              
+                            </xs:annotation>
+                            <xs:complexType>
+                              <xs:annotation>
+                                <xs:appinfo>
+                                  <simplify:property name="durationOrCooldownColorOrStatBoosts">
+                                    <simplify:as-element-property/>
+                                  </simplify:property>
+                                </xs:appinfo>
+                              </xs:annotation>
+                              <xs:choice maxOccurs="unbounded" minOccurs="0">
+                                <xs:element type="xs:byte" name="duration"/>
+                                <xs:element name="cooldownColor">
+                                  <xs:complexType>
+                                    <xs:simpleContent>
+                                      <xs:extension base="xs:string">
+                                        <xs:attribute type="xs:short" name="r" use="optional"/>
+                                        <xs:attribute type="xs:short" name="g" use="optional"/>
+                                        <xs:attribute type="xs:short" name="b" use="optional"/>
+                                      </xs:extension>
+                                    </xs:simpleContent>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="statBoosts">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="statBoost" maxOccurs="unbounded" minOccurs="0">
+                                        <xs:complexType>
+                                          <xs:annotation>
+                                            <xs:appinfo>
+                                              <simplify:property name="boostTypeOrAmountOrShipTarget">
+                                                <simplify:as-element-property/>
+                                              </simplify:property>
+                                            </xs:appinfo>
+                                          </xs:annotation>
+                                          <xs:choice maxOccurs="unbounded" minOccurs="0">
+                                            <xs:element type="xs:string" name="boostType"/>
+                                            <xs:element type="xs:float" name="amount"/>
+                                            <xs:element type="xs:string" name="shipTarget"/>
+                                            <xs:element type="xs:string" name="crewTarget"/>
+                                            <xs:element type="xs:string" name="affectsSelf"/>
+                                            <xs:element type="xs:string" name="value"/>
+                                            <xs:element name="whiteList">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element type="xs:string" name="hatch"/>
+                                                  <xs:element type="xs:string" name="spider"/>
+                                                  <xs:element type="xs:string" name="weaver"/>
+                                                  <xs:element type="xs:string" name="queen" minOccurs="0"/>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:choice>
+                                          <xs:attribute type="xs:string" name="name" use="optional"/>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element type="xs:float" name="moveSpeedMultiplier"/>
+                                <xs:element name="finishSounds">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:string" name="finishSound" maxOccurs="unbounded" minOccurs="0"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="animSheet">
+                                  <xs:complexType>
+                                    <xs:simpleContent>
+                                      <xs:extension base="xs:string">
+                                        <xs:attribute type="xs:string" name="baseVisible" use="optional"/>
+                                      </xs:extension>
+                                    </xs:simpleContent>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element type="xs:float" name="allDamageTakenMultiplier"/>
+                                <xs:element type="xs:string" name="isTelepathic"/>
+                                <xs:element type="xs:string" name="effectAnim"/>
+                                <xs:element type="xs:float" name="damageMultiplier"/>
+                                <xs:element type="xs:byte" name="fireDamageMultiplier"/>
+                                <xs:element type="xs:float" name="suffocationModifier"/>
+                                <xs:element type="xs:float" name="repairSpeed"/>
+                                <xs:element type="xs:float" name="sabotageSpeedMultiplier"/>
+                                <xs:element type="xs:float" name="damageTakenMultiplier"/>
+                                <xs:element type="xs:float" name="healAmount"/>
+                                <xs:element type="xs:byte" name="damageEnemiesAmount"/>
+                                <xs:element type="xs:byte" name="healCrewAmount"/>
+                                <xs:element type="xs:string" name="invulnerable"/>
+                                <xs:element type="xs:string" name="canFight"/>
+                                <xs:element type="xs:string" name="canSabotage"/>
+                                <xs:element type="xs:string" name="canPhaseThroughDoors"/>
+                                <xs:element type="xs:string" name="canRepair"/>
+                                <xs:element type="xs:string" name="detectsLifeforms"/>
+                                <xs:element type="xs:string" name="controllable"/>
+                                <xs:element type="xs:string" name="canMan"/>
+                                <xs:element type="xs:byte" name="bonusPower"/>
+                                <xs:element type="xs:byte" name="oxygenChangeSpeed"/>
+                                <xs:element type="xs:string" name="hackDoors"/>
+                              </xs:choice>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="req">
+                            <xs:annotation>
+                              
+                            </xs:annotation>
+                            <xs:complexType>
+                              <xs:annotation>
+                                <xs:appinfo>
+                                  <simplify:property name="enemyShipOrSystemInRoomOrEnemyInRoom">
+                                    <simplify:as-element-property/>
+                                  </simplify:property>
+                                </xs:appinfo>
+                              </xs:annotation>
+                              <xs:choice maxOccurs="unbounded" minOccurs="0">
+                                <xs:element type="xs:string" name="enemyShip"/>
+                                <xs:element name="systemInRoom">
+                                  <xs:complexType>
+                                    <xs:simpleContent>
+                                      <xs:extension base="xs:string">
+                                        <xs:attribute type="xs:string" name="damaged" use="optional"/>
+                                      </xs:extension>
+                                    </xs:simpleContent>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element type="xs:string" name="enemyInRoom"/>
+                                <xs:element type="xs:string" name="inCombat"/>
+                                <xs:element type="xs:byte" name="minHealth">
+                                  <xs:annotation>
+                                    
+                                  </xs:annotation>
+                                </xs:element>
+                                <xs:element type="xs:byte" name="maxHealth"/>
+                                <xs:element type="xs:string" name="hasClonebay"/>
+                                <xs:element type="xs:string" name="friendlyInRoom"/>
+                                <xs:element type="xs:string" name="playerShip"/>
+                                <xs:element type="xs:string" name="aiDisabled"/>
+                              </xs:choice>
+                              <xs:attribute type="xs:string" name="type" use="optional"/>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element type="xs:byte" name="sysDamage"/>
+                          <xs:element type="xs:byte" name="persDamage"/>
+                          <xs:element type="xs:byte" name="fireChance"/>
+                          <xs:element type="xs:byte" name="stun"/>
+                          <xs:element type="xs:byte" name="breachChance"/>
+                          <xs:element name="activateWhenReady">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute type="xs:string" name="enemiesOnly" use="optional"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element type="xs:byte" name="animFrame"/>
+                          <xs:element type="xs:string" name="lockdown"/>
+                          <xs:element type="xs:string" name="transformRace"/>
+                          <xs:element type="xs:byte" name="ion"/>
+                          <xs:element type="xs:byte" name="stunChance"/>
+                          <xs:element type="xs:byte" name="damage"/>
+                          <xs:element type="xs:byte" name="enemyHealth"/>
+                        </xs:choice>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element type="xs:float" name="repairSpeed">
+                      <xs:annotation>
+                        
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element type="xs:float" name="damageTakenMultiplier">
+                      <xs:annotation>
+                        
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element type="xs:float" name="sabotageSpeedMultiplier"/>
+                    <xs:element type="xs:byte" name="defaultSkillLevel"/>
+                    <xs:element type="xs:string" name="cloneLoseSkills"/>
+                    <xs:element type="xs:short" name="maxHealth">
+                      <xs:annotation>
+                        
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element type="xs:float" name="fireRepairMultiplier">
+                      <xs:annotation>
+                        
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element type="xs:float" name="moveSpeedMultiplier"/>
+                    <xs:element name="passiveStatBoosts">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="statBoost" maxOccurs="unbounded" minOccurs="0">
+                            <xs:annotation>
+                              
+                            </xs:annotation>
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="boostType"/>
+                                <xs:element type="xs:string" name="value" minOccurs="0"/>
+                                <xs:element type="xs:float" name="amount" minOccurs="0"/>
+                                <xs:element type="xs:string" name="shipTarget"/>
+                                <xs:element type="xs:string" name="crewTarget"/>
+                                <xs:element type="xs:string" name="droneTarget" minOccurs="0"/>
+                                <xs:element type="xs:string" name="affectsSelf" minOccurs="0"/>
+                                <xs:element name="systemPowerDependency" minOccurs="0">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:string" name="oxygen" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="battery" minOccurs="0"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="systemPowerScaling" minOccurs="0">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:byte" name="noSys"/>
+                                      <xs:element type="xs:byte" name="hackedSys"/>
+                                      <xs:element type="xs:byte" name="noPwr"/>
+                                      <xs:element type="xs:byte" name="onePwr"/>
+                                      <xs:element type="xs:byte" name="twoPwr"/>
+                                      <xs:element type="xs:byte" name="threePwr"/>
+                                      <xs:element type="xs:byte" name="morePwr"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element type="xs:byte" name="maxStacks" minOccurs="0"/>
+                                <xs:element type="xs:short" name="priority" minOccurs="0"/>
+                                <xs:element name="whiteList" minOccurs="0">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:string" name="hatch"/>
+                                      <xs:element type="xs:string" name="spider"/>
+                                      <xs:element type="xs:string" name="weaver"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attribute type="xs:string" name="name" use="optional"/>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element type="xs:string" name="isTelepathic"/>
+                    <xs:element type="xs:float" name="healCrewAmount">
+                      <xs:annotation>
+                        
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="shootingSounds">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="shootingSound" maxOccurs="unbounded" minOccurs="0"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element type="xs:float" name="rangedDamageMultiplier"/>
+                    <xs:element type="xs:float" name="healSpeed"/>
+                    <xs:element name="deathEffect">
+                      <xs:complexType>
+                        <xs:annotation>
+                          <xs:appinfo>
+                            <simplify:property name="ionOrPersDamageOrStun">
+                              <simplify:as-element-property/>
+                            </simplify:property>
+                          </xs:appinfo>
+                        </xs:annotation>
+                        <xs:choice maxOccurs="unbounded" minOccurs="0">
+                          <xs:element type="xs:byte" name="ion"/>
+                          <xs:element type="xs:byte" name="persDamage"/>
+                          <xs:element type="xs:byte" name="stun"/>
+                          <xs:element type="xs:string" name="friendlyFire"/>
+                          <xs:element type="xs:string" name="shipFriendlyFire"/>
+                          <xs:element type="xs:string" name="lockdown"/>
+                          <xs:element type="xs:byte" name="breachChance"/>
+                          <xs:element name="spawnCrew">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="race"/>
+                                <xs:element type="xs:string" name="name"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="playerEvent">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute type="xs:string" name="load" use="optional"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element type="xs:byte" name="fireChance"/>
+                        </xs:choice>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element type="xs:string" name="canFight"/>
+                    <xs:element type="xs:string" name="canRepair"/>
+                    <xs:element type="xs:string" name="canSabotage"/>
+                    <xs:element type="xs:string" name="canSuffocate"/>
+                    <xs:element type="xs:string" name="canBurn"/>
+                    <xs:element type="xs:string" name="canPhaseThroughDoors"/>
+                    <xs:element type="xs:byte" name="bonusPower"/>
+                    <xs:element type="xs:string" name="hasCustomDeathAnimation"/>
+                    <xs:element type="xs:string" name="hasDeathExplosion"/>
+                    <xs:element type="xs:float" name="oxygenChangeSpeed"/>
+                    <xs:element type="xs:float" name="stunMultiplier"/>
+                    <xs:element name="repairSounds">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="repairSound" maxOccurs="unbounded" minOccurs="0"/>
+                        </xs:sequence>
+                        <xs:attribute type="xs:byte" name="animSoundFrame" use="optional"/>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element type="xs:string" name="providesPower"/>
+                    <xs:element type="xs:string" name="detectsLifeforms">
+                      <xs:annotation>
+                        
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element type="xs:string" name="canMan"/>
+                    <xs:element type="xs:byte" name="powerDrain"/>
+                    <xs:element type="xs:string" name="powerDrainFriendly"/>
+                    <xs:element type="xs:float" name="damageEnemiesAmount"/>
+                    <xs:element type="xs:string" name="controllable"/>
+                    <xs:element type="xs:string" name="isAnaerobic"/>
+                    <xs:element type="xs:string" name="droneMoveFromManningSlot"/>
+                    <xs:element name="droneAI">
+                      <xs:complexType>
+                        <xs:annotation>
+                          <xs:appinfo>
+                            <simplify:property name="fightAIOrRepairAIOrReturnToDroneRoom">
+                              <simplify:as-element-property/>
+                            </simplify:property>
+                          </xs:appinfo>
+                        </xs:annotation>
+                        <xs:choice maxOccurs="unbounded" minOccurs="0">
+                          <xs:element type="xs:string" name="fightAI"/>
+                          <xs:element type="xs:string" name="repairAI"/>
+                          <xs:element type="xs:string" name="returnToDroneRoom"/>
+                          <xs:element type="xs:string" name="manAI"/>
+                        </xs:choice>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element type="xs:string" name="resistsMindControl"/>
+                    <xs:element type="xs:string" name="noClone"/>
+                    <xs:element type="xs:string" name="animSheet"/>
+                    <xs:element name="shootTimer">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:short" name="min"/>
+                            <xs:attribute type="xs:short" name="max"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element type="xs:string" name="canPunch"/>
+                  </xs:choice>
+                  <xs:attribute type="xs:string" name="name" use="optional"/>
+                  <xs:attribute type="xs:string" name="drone" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="drones">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="drone" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="crewBlueprint"/>
+                    <xs:element type="xs:string" name="tooltipName"/>
+                  </xs:sequence>
+                  <xs:attribute type="xs:string" name="name" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="augments">
+          <xs:annotation>
+            
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="aug" maxOccurs="unbounded" minOccurs="0">
+                <xs:annotation>
+                  
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:annotation>
+                    <xs:appinfo>
+                      <simplify:property name="functionOrStatBoostsOrLocked">
+                        <simplify:as-element-property/>
+                      </simplify:property>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  <xs:choice maxOccurs="unbounded" minOccurs="0">
+                    <xs:element name="function">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="name" use="optional"/>
+                            <xs:attribute type="xs:float" name="value" use="optional"/>
+                            <xs:attribute type="xs:string" name="useForReqs" use="optional"/>
+                            <xs:attribute type="xs:string" name="warning" use="optional"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="statBoosts">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="statBoost" maxOccurs="unbounded" minOccurs="0">
+                            <xs:complexType>
+                              <xs:annotation>
+                                <xs:appinfo>
+                                  <simplify:property name="boostTypeOrValueOrShipTarget">
+                                    <simplify:as-element-property/>
+                                  </simplify:property>
+                                </xs:appinfo>
+                              </xs:annotation>
+                              <xs:choice maxOccurs="unbounded" minOccurs="0">
+                                <xs:element type="xs:string" name="boostType"/>
+                                <xs:element type="xs:string" name="value"/>
+                                <xs:element type="xs:string" name="shipTarget"/>
+                                <xs:element type="xs:string" name="crewTarget"/>
+                                <xs:element type="xs:string" name="droneTarget"/>
+                                <xs:element type="xs:float" name="amount"/>
+                                <xs:element type="xs:short" name="priority"/>
+                                <xs:element name="systemPowerDependency">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:string" name="medbay" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="drones" minOccurs="0"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="systemPowerScaling">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:byte" name="noSys"/>
+                                      <xs:element type="xs:byte" name="noPwr"/>
+                                      <xs:element type="xs:byte" name="onePwr"/>
+                                      <xs:element type="xs:float" name="twoPwr" minOccurs="0"/>
+                                      <xs:element type="xs:float" name="threePwr" minOccurs="0"/>
+                                      <xs:element type="xs:float" name="fourPwr" minOccurs="0"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element type="xs:string" name="systemRoomTarget"/>
+                                <xs:element name="systemList">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:string" name="medbay"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="blackList">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:string" name="shell"/>
+                                      <xs:element type="xs:string" name="toxic"/>
+                                      <xs:element type="xs:string" name="shellguardian"/>
+                                      <xs:element type="xs:string" name="shellmedic"/>
+                                      <xs:element type="xs:string" name="shellrepair"/>
+                                      <xs:element type="xs:string" name="shellalkali"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="whiteList">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:string" name="human" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="medic" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="engineer" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="soldier" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="mfk" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="detective" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="tully" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="jerry" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="jerryg" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="ponyj" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="ponycj" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="engi" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="separatist" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="separatistblur" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="defend" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="turzil" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="energy" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="monk" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="bomber" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="radical" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="peace" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="deathless" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="orchid" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="chieftain" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="mantis" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="freemantis" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="suzerain" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="warlord" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="bishop" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="rock" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="outcast" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="commando" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="crusader" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="cultist" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="lord" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="symbiote" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="crystal" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="sentinel" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="ruwen" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="slug" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="snail" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="sabo" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="ranger" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="sylvan" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="nights" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="slocknog" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="shell" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="shellmedic" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="shellrepair" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="shellguardian" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="toxic" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="shellalkali" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="anaerobic" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="welder" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="eater" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="augmented" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="anointed" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="phantom" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="phantomalpha" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="goul" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="goulalpha" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="mare" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="marealpha" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="wraith" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="wraithalpha" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="reaper" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="bloblarge" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="blob" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="blobancient" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="blobcrystal" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="blobfreemantis" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="blobhuman" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="bloblizard" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="blobmantis" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="blobpony" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="blobqueen" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="blobrock" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="blobsalt" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="blobshell" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="blobslug" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="blobspider" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="bloborchid" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="techno" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="technoancient" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="technoengi" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="technoavatar" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="technolanius" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="technobattle" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="technobattle2" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="technoboarderion" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="technorepair" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="technodoctor" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="technomanning" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="technorecon" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="technoatom" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="technodirector" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="technomender" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="technoroomba" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="technoa55" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="blobswarm" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="hatch" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="spider" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="weaver" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="queen" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="ancient" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="royal" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="traveler" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="avatar" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="avatara" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="avatarroyal" minOccurs="0"/>
+                                      <xs:element type="xs:string" name="avatarroyala" minOccurs="0"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="statBoost">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:string" name="boostType"/>
+                                      <xs:element type="xs:float" name="amount"/>
+                                      <xs:element type="xs:string" name="shipTarget"/>
+                                      <xs:element type="xs:string" name="crewTarget"/>
+                                      <xs:element type="xs:string" name="affectsSelf"/>
+                                      <xs:element type="xs:byte" name="priority"/>
+                                      <xs:element name="whiteList" minOccurs="0">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element type="xs:string" name="human" minOccurs="0"/>
+                                            <xs:element type="xs:string" name="medic" minOccurs="0"/>
+                                            <xs:element type="xs:string" name="engineer" minOccurs="0"/>
+                                            <xs:element type="xs:string" name="soldier" minOccurs="0"/>
+                                            <xs:element type="xs:string" name="mfk" minOccurs="0"/>
+                                            <xs:element type="xs:string" name="detective" minOccurs="0"/>
+                                            <xs:element type="xs:string" name="tully" minOccurs="0"/>
+                                            <xs:element type="xs:string" name="jerry" minOccurs="0"/>
+                                            <xs:element type="xs:string" name="jerryg" minOccurs="0"/>
+                                            <xs:element type="xs:string" name="ponyj" minOccurs="0"/>
+                                            <xs:element type="xs:string" name="ponycj" minOccurs="0"/>
+                                            <xs:element type="xs:string" name="engi" minOccurs="0"/>
+                                            <xs:element type="xs:string" name="separatist" minOccurs="0"/>
+                                            <xs:element type="xs:string" name="defend" minOccurs="0"/>
+                                            <xs:element type="xs:string" name="turzil" minOccurs="0"/>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="blackList" minOccurs="0">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element type="xs:string" name="hatch"/>
+                                            <xs:element type="xs:string" name="spider"/>
+                                            <xs:element type="xs:string" name="weaver"/>
+                                            <xs:element type="xs:string" name="queen"/>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute type="xs:string" name="name" use="optional"/>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:choice>
+                              <xs:attribute type="xs:string" name="name" use="optional"/>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element type="xs:string" name="locked"/>
+                    <xs:element name="statBoost">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="boostType"/>
+                          <xs:element type="xs:float" name="amount"/>
+                          <xs:element type="xs:string" name="shipTarget"/>
+                          <xs:element type="xs:string" name="crewTarget"/>
+                          <xs:element type="xs:byte" name="priority"/>
+                        </xs:sequence>
+                        <xs:attribute type="xs:string" name="name" use="optional"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:choice>
+                  <xs:attribute type="xs:string" name="name" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="events">
+          <xs:annotation>
+            
+          </xs:annotation>
+          <xs:complexType>
+            <xs:choice maxOccurs="unbounded" minOccurs="0">
+              <xs:annotation>
+                <xs:appinfo>
+                    <simplify:as-element-property/>
+                </xs:appinfo>
+              </xs:annotation>
+              <xs:element name="bossShip" maxOccurs="unbounded" minOccurs="0">
+                <xs:annotation>
+                  
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:short" name="yOffset" use="optional"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="event" maxOccurs="unbounded" minOccurs="0">
+                <xs:annotation>
+                  
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:annotation>
+                    <xs:appinfo>
+                      <simplify:property name="hiddenAugOrLoadEventOrRemoveItem">
+                        <simplify:as-element-property/>
+                      </simplify:property>
+                    </xs:appinfo>
+                  </xs:annotation>
+                  <xs:choice maxOccurs="unbounded" minOccurs="0">
+                    <xs:element type="xs:string" name="hiddenAug"/>
+                    <xs:element name="loadEvent">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="seeded" use="optional"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element type="xs:string" name="removeItem"/>
+                    <xs:element type="xs:string" name="checkCargo">
+                      <xs:annotation>
+                        
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element type="xs:string" name="noQuestText"/>
+                    <xs:element name="win">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="creditsBackground" use="optional"/>
+                            <xs:attribute type="xs:string" name="creditsText" use="optional"/>
+                            <xs:attribute type="xs:string" name="text" use="optional"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element type="xs:string" name="disableScrapScore"/>
+                    <xs:element name="unlockShip">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="silent" use="optional"/>
+                            <xs:attribute type="xs:string" name="shipReq" use="optional"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element type="xs:string" name="secretSectorWarp"/>
+                    <xs:element type="xs:string" name="preventQuest"/>
+                    <xs:element name="beaconType">
+                      <xs:complexType>
+                        <xs:choice maxOccurs="unbounded" minOccurs="0">
+                          <xs:annotation>
+                            <xs:appinfo>
+                                <simplify:as-element-property/>
+                            </xs:appinfo>
+                          </xs:annotation>
+                          <xs:element name="color">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute type="xs:short" name="r" use="optional"/>
+                                  <xs:attribute type="xs:short" name="g" use="optional"/>
+                                  <xs:attribute type="xs:short" name="b" use="optional"/>
+                                  <xs:attribute type="xs:float" name="a" use="optional"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="unvisitedTooltip">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute type="xs:string" name="id" use="optional"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="visitedTooltip">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute type="xs:string" name="id" use="optional"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element type="xs:string" name="undiscoveredTooltip"/>
+                        </xs:choice>
+                        <xs:attribute type="xs:string" name="id" use="optional"/>
+                        <xs:attribute type="xs:string" name="global" use="optional"/>
+                        <xs:attribute type="xs:string" name="req" use="optional"/>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element type="xs:string" name="removeHazards"/>
+                  </xs:choice>
+                  <xs:attribute type="xs:string" name="name" use="optional"/>
+                  <xs:attribute type="xs:string" name="recursive" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="sector" maxOccurs="unbounded" minOccurs="0">
+                <xs:annotation>
+                  
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="exitBeacon" minOccurs="0">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="event" use="optional"/>
+                            <xs:attribute type="xs:string" name="nebulaEvent" use="optional"/>
+                            <xs:attribute type="xs:string" name="rebelEvent" use="optional"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="rebelBeacon" minOccurs="0">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="event" use="optional"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element type="xs:string" name="removeFirstBeaconNebula" minOccurs="0"/>
+                    <xs:element type="xs:string" name="preventQuest" minOccurs="0"/>
+                    <xs:element name="beaconType" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="color">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute type="xs:short" name="r" use="optional"/>
+                                  <xs:attribute type="xs:short" name="g" use="optional"/>
+                                  <xs:attribute type="xs:byte" name="b" use="optional"/>
+                                  <xs:attribute type="xs:float" name="a" use="optional"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element type="xs:string" name="unvisitedTooltip" minOccurs="0"/>
+                          <xs:element type="xs:string" name="visitedTooltip" minOccurs="0"/>
+                        </xs:sequence>
+                        <xs:attribute type="xs:string" name="id" use="optional"/>
+                        <xs:attribute type="xs:string" name="global" use="optional"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute type="xs:string" name="name" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:string" name="eventFile" maxOccurs="unbounded" minOccurs="0">
+                <xs:annotation>
+                  
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="req" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType mixed="true">
+                  <xs:attribute type="xs:string" name="name" use="optional"/>
+                  <xs:attribute type="xs:string" name="type" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:choice>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="store">
+          <xs:annotation>
+            
+          </xs:annotation>
+          <xs:complexType>
+            <xs:choice maxOccurs="unbounded" minOccurs="0">
+              <xs:annotation>
+                <xs:appinfo>
+                    <simplify:as-element-property/>
+                </xs:appinfo>
+              </xs:annotation>
+              <xs:element name="customStore">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="resource" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="type"/>
+                          <xs:element name="count">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute type="xs:byte" name="min" use="optional"/>
+                                  <xs:attribute type="xs:byte" name="max" use="optional"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element type="xs:byte" name="price"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element type="xs:byte" name="itemPurchaseLimit"/>
+                    <xs:element name="category" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="item" maxOccurs="unbounded" minOccurs="0">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="blueprint"/>
+                                <xs:element name="modifier">
+                                  <xs:annotation>
+                                    
+                                  </xs:annotation>
+                                  <xs:complexType>
+                                    <xs:simpleContent>
+                                      <xs:extension base="xs:string">
+                                        <xs:attribute type="xs:float" name="min" use="optional"/>
+                                        <xs:attribute type="xs:float" name="max" use="optional"/>
+                                        <xs:attribute type="xs:string" name="flat" use="optional"/>
+                                      </xs:extension>
+                                    </xs:simpleContent>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element type="xs:byte" name="price"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute type="xs:string" name="type" use="optional"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute type="xs:string" name="id" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="event">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="customStore"/>
+                  </xs:sequence>
+                  <xs:attribute type="xs:string" name="name" use="optional"/>
+                  <xs:attribute type="xs:string" name="recursive" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:string" name="bossShip"/>
+              <xs:element name="req">
+                <xs:complexType>
+                  <xs:attribute type="xs:string" name="name" use="optional"/>
+                  <xs:attribute type="xs:string" name="type" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="eventFile">
+                <xs:complexType mixed="true">
+                  <xs:attribute type="xs:string" name="name" use="optional"/>
+                  <xs:attribute type="xs:string" name="type" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:choice>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="boss">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="crew" minOccurs="0">
+                <xs:annotation>
+                  
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:choice maxOccurs="unbounded" minOccurs="0">
+                    <xs:annotation>
+                      <xs:appinfo>
+                          <simplify:as-element-property/>
+                      </xs:appinfo>
+                    </xs:annotation>
+                    <xs:element name="soldier">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:byte" name="room"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="mfk" maxOccurs="unbounded" minOccurs="0">
+                      <xs:annotation>
+                        
+                      </xs:annotation>
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:byte" name="room" use="optional"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="medic">
+                      <xs:annotation>
+                        
+                      </xs:annotation>
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:byte" name="room"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="engineer" maxOccurs="unbounded" minOccurs="0">
+                      <xs:annotation>
+                        
+                      </xs:annotation>
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:byte" name="room" use="optional"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:choice>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="surgeDrones" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="drone" maxOccurs="unbounded" minOccurs="0">
+                      <xs:annotation>
+                        
+                      </xs:annotation>
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:byte" name="difficulty" use="optional"/>
+                            <xs:attribute type="xs:string" name="name" use="optional"/>
+                            <xs:attribute type="xs:byte" name="count" use="optional"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="freeDrones" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="DRONE_CONTROL_COMBAT"/>
+                    <xs:element type="xs:string" name="DRONE_CONTROL_DEFENSE"/>
+                    <xs:element type="xs:string" name="DRONE_CONTROL_CREW"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
