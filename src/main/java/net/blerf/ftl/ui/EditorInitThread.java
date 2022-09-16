@@ -24,6 +24,7 @@ import net.blerf.ftl.core.EditorConfig;
 import net.blerf.ftl.net.TaggedString;
 import net.blerf.ftl.net.TaggedStringResponseHandler;
 import net.blerf.ftl.ui.FTLFrame;
+import net.blerf.ftl.ui.contract.IFTLFrame;
 
 
 public class EditorInitThread extends Thread {
@@ -33,12 +34,12 @@ public class EditorInitThread extends Thread {
 	private final String latestVersionUrl = "https://raw.github.com/Vhati/ftl-profile-editor/master/latest-version.txt";
 	private final String versionHistoryUrl = "https://raw.github.com/Vhati/ftl-profile-editor/master/release-notes.txt";
 
-	private final FTLFrame frame;
+	private final IFTLFrame frame;
 	private final EditorConfig initConfig;
 	private final int appVersion;
 
 
-	public EditorInitThread( FTLFrame frame, EditorConfig initConfig, int appVersion ) {
+	public EditorInitThread( IFTLFrame frame, EditorConfig initConfig, int appVersion ) {
 		super( "init" );
 		this.frame = frame;
 		this.initConfig = initConfig;

@@ -38,6 +38,7 @@ import net.blerf.ftl.xml.ShipChassis;
 import net.blerf.ftl.xml.ShipEvent;
 import net.blerf.ftl.xml.ShipEvents;
 import net.blerf.ftl.xml.TextLookupUnmarshalListener;
+import net.ceshion.ftl.xml.hyperspace.FTL;
 
 
 public class DatParser {
@@ -76,6 +77,33 @@ public class DatParser {
 		return nts.getNamedTexts();
 	}
 
+  public FTL readHyperspace( InputStream stream, String fileName, Map<String, String> textLookupMap ) throws IOException, JAXBException, JDOMException {
+
+		String streamText = TextUtilities.decodeText( stream, fileName ).text;
+
+		StringBuffer streamBuf = new StringBuffer( streamText.length() + 50 );
+		streamBuf.append( "<FTL>" );
+		Matcher m = scrubPtn.matcher( streamText );
+		while ( m.find() ) {
+			m.appendReplacement( streamBuf, "" );
+		}
+		m.appendTail( streamBuf );
+		streamBuf.append( "</FTL>" );
+
+		Document doc = TextUtilities.parseStrictOrSloppyXML( streamBuf, fileName );
+		DOMOutputter domOutputter = new DOMOutputter();
+
+		TextLookupUnmarshalListener textLookupListener = new TextLookupUnmarshalListener();
+		textLookupListener.getLookupMap().putAll( textLookupMap );
+
+		JAXBContext jc = JAXBContext.newInstance( FTL.class );
+		Unmarshaller u = jc.createUnmarshaller();
+		u.setListener( textLookupListener );
+
+		FTL hs = (FTL)u.unmarshal( domOutputter.output( doc ) );
+
+		return hs;
+	}
 
 	public List<Achievement> readAchievements( InputStream stream, String fileName, Map<String, String> textLookupMap ) throws IOException, JAXBException, JDOMException {
 
