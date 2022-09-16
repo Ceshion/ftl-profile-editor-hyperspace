@@ -1,4 +1,4 @@
-### WIP Multiverse/Hyperspace compatibility project
+### WIP Hyperspace compatibility project
 ### Original readme from Vhati below
 
 ftl-profile-editor
