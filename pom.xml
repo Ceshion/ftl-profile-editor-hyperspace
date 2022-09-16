@@ -63,7 +63,19 @@
 		<dependency>
 			<groupId>com.beust</groupId>
 			<artifactId>jcommander</artifactId>
-			<version>1.48</version>  <!-- Since 1.55, requires Java 7. Since 1.58, Java 8. -->
+      <version>1.48</version> <!-- Since 1.55, requires Java 7. Since 1.58, Java 8. -->
+    </dependency>
+    <dependency>
+      <groupId>jakarta.xml.bind</groupId>
+      <artifactId>jakarta.xml.bind-api</artifactId>
+      <version>2.3.2</version>
+    </dependency>
+
+    <!-- Runtime, com.sun.xml.bind module -->
+    <dependency>
+      <groupId>org.glassfish.jaxb</groupId>
+      <artifactId>jaxb-runtime</artifactId>
+      <version>2.3.2</version>
 		</dependency>
 	</dependencies>
   
