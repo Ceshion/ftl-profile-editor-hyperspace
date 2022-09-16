@@ -93,9 +93,10 @@ import net.blerf.ftl.ui.SavedGameSectorTreePanel;
 import net.blerf.ftl.ui.SavedGameStateVarsPanel;
 import net.blerf.ftl.ui.Statusbar;
 import net.blerf.ftl.ui.StatusbarMouseListener;
+import net.blerf.ftl.ui.contract.IFTLFrame;
 
 
-public class FTLFrame extends JFrame implements ActionListener, Statusbar, Thread.UncaughtExceptionHandler {
+public class FTLFrame extends IFTLFrame {
 
 	private static final Logger log = LoggerFactory.getLogger( FTLFrame.class );
 
